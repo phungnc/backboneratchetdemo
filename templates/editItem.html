@@ -1,0 +1,22 @@
+  <header class="bar-title">
+  	<a class="cancel button" href="#">Cancel</a>
+    <h1 class="title"><%- title %></h1>
+    <a class="save button" href="#">Done</a>
+  </header>
+  
+  <div class="content content-padded">
+		<form>
+			  <input id="taskTitle" name="taskTitle" type="text" placeholder="Input task" value="<%= taskTitle !== "" ? taskTitle : "" %>" >
+			  <input id="date" type="date" name="date" value="<%= date !== "" ? date : "" %>" >
+        <select id="pic" name="pic">
+          <option value="bg" <%= pic === "bg" ? "selected" : "" %>>Bride&Groom</option>
+          <option value="b" <%= pic === "b" ? "selected" : "" %>>Bride</option>
+          <option value="g" <%= pic === "g" ? "selected" : "" %>>Groom</option>
+        </select>
+			  <textarea id="note" name="note" rows="5" placeholder="Input notes"><%= note !== "" ? note : "" %></textarea>
+				<input id="check" name="check" type="checkbox" <%= check ? 'checked' : '' %>>
+				<label class="checkbox" for="check">Done</label>
+			  <!--a class="save button button-block" style="margin-top: 10px;">Save</a-->
+		</form>
+
+  </div>
