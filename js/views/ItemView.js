@@ -36,7 +36,7 @@
 		 *
 		 *
 		 */
-		change: function(){
+		change: function(event){
 			//console.log("change");
 			event.stopPropagation();
 			// Apply change checkbox
@@ -51,7 +51,7 @@
 		 *Arg: events
 		 *return: none
 		 */
-		editItem: function() {
+		editItem: function(event) {
 			//
 			//console.log("editItem");
 			event.stopPropagation();
@@ -65,7 +65,7 @@
 		 *Arg: events
 		 *return: none
 		 */
-		removeItem: function( events ) {
+		removeItem: function(event) {
 
 			this.trigger( 'onDeleteItem', this.model );
 			//

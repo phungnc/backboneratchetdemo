@@ -43,11 +43,11 @@
 			//this.model.set(change);	
 		},
 
-		save: function( events) {
+		save: function( event) {
 			//console.log("saveItem");
 			event.stopPropagation();
 			event.preventDefault();
-			
+
 			var newAttrs = this.newAttributes();		
 			if(this.model.isNew()) {
 
@@ -65,7 +65,9 @@
 			//kill this view
 			this.close();
 		},
+		
 		newAttributes: function()	{
+
 			return {
 				check: $("#check").is(':checked'),
 				taskTitle: $("#taskTitle").val(),
@@ -75,7 +77,7 @@
 			}
 
 		},
-		cancel: function( events ) {
+		cancel: function( event ) {
 			console.log("cancel");			
 			event.stopPropagation();
 			event.preventDefault();
