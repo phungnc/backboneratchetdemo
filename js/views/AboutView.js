@@ -12,7 +12,7 @@
 		},
 
 		initialize: function(options) {
-			this.render();
+			//this.render();
 		},
 
 		render: function() {
