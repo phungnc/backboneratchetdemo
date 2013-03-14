@@ -97,21 +97,20 @@
 
 		<div class="docs-inner-wrapper">    	
 			<article class="component">
-				<h3 class="component-title">Simple Backbone Wedding Checklist!</h3>
+					<h3 class="component-title">Simple Backbone Wedding Checklist!</h3>
 					<p class="component-description">Recently, I find out <a href="http://maker.github.com/ratchet/">Ratchet</a>, the prototye iPhone apps with simple HTML, CSS and JS components</p>		
 					<p class="component-description">I really love the simple, so I try create a simple demo like iPhone App with Backbone.js and Ratchet.css</p>	
 					<p class="component-description">The Backbone.js side is similar to common Backbone Todo Example, except the modal Add, Edit View</p>	
 					<p class="component-description">By using two of Backbone.js and Ratchet.css, I think iPhone App UI is built so fast</p>	
 					<p class="component-description">In this demo, I use only Ratchet.css and I also borrow their page's style and their iPhone :)</p>	
-					<p class="component-description"></p>	
-					<p class="component-description"></p>	
-					<p class="component-description"></p>	
-					<p class="component-description">The source code is available in
-         <a href="https://github.com/phungnc/backboneratchetdemo/">this repository </a> on GitHub</p>	
+					<p class="component-description">The source code is available in <a href="https://github.com/phungnc/backboneratchetdemo/">this repository </a> on GitHub</p>	
+			</article>	
 			<!-- main content -->
-			<div class="iphone iphone-fixed">
+			<div id="popoversInPhone" class="iphone iphone-fixed">
 				<div class="iphone-content">
-					<header class="bar-title"><h1 class="title">Todolist</h1>
+					<header class="bar-title">
+						<a id="about" href="#" class="button">Readme</a>
+						<h1 class="title">Todolist</h1>
 						<a id="addItem" role="button" class="button-main">Add</a>
 					</header>
 					<div class="content">
@@ -120,9 +119,8 @@
 					<div id="myModal" class="modal"></div>
 				</div>
 			</div>
-			</article>
-		</div>
 
+		</div>
 
 		<!-- /main content -->
 
@@ -151,7 +149,8 @@
 <script src="js/views/AddEditItemView.js"></script>
 <script src="js/views/ItemView.js"></script>
 <script src="js/views/ItemListView.js"></script>
+<script src="js/views/AboutView.js"></script>
 <!-- script file adding end -->
-<a href="https://github.com/phungnc/backboneratchetdemo/"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+<a class="fork-me" href="https://github.com/phungnc/backboneratchetdemo/"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
 	</body>
 </html>

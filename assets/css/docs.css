@@ -845,8 +845,7 @@ h6 {
 
   .docs-inner-wrapper {
     padding-right: 20px;
-    /*padding-left: 20px;*/
-    padding-left: 0px;
+    padding-left: 20px;
   }
 
   /* Have the masthead scroll away instead of being fixed */
@@ -950,13 +949,23 @@ h6 {
   }
 
   .component {
+    /*
     padding: 50px 20px;
     margin-left: -20px;
     margin-right: -20px;
     opacity: 1;
     border-bottom: 1px solid #ddd;
+    */
+    display: none;
   }
-
+  .component-mobile{
+    padding: 50px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    opacity: 1;
+    border-bottom: 1px solid #ddd;
+    text-align: justify;    
+  }
   .component:last-child {
     margin-bottom: 80px;
   }
@@ -1000,7 +1009,7 @@ h6 {
   /* Hide the iPhone on mobile */
   .iphone {
     /*display: none;*/
-    position: relative;
+    position: fixed;
     margin-bottom: 20px;
     font-family: "Helvetica Neue", sans-serif;
     font-weight: normal;
@@ -1020,14 +1029,8 @@ h6 {
     left: 0;
     top: 0;    
   }
-  .component{
-    margin-left: 0;
-    padding: 0;
-    position: relative;  
-  }
-  .component-description{
-    font-size: 14px;
-    line-height: 17px;   
+  .fork-me{
+    display: none;
   }
 }
 
