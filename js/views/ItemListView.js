@@ -7,6 +7,7 @@
 
 		events: {
 			"click #addItem"			: "addItem",
+			"click #about"				: "about",
 		},
 		//
 		addEditItemTemplate: _.template($('#template_editItem').html()),
@@ -98,6 +99,9 @@
 			})
 			item.destroy();
 			this.renderAll();			
+		},
+		about: function(){
+			var view = new Views.AboutView();		
 		}
 
 	});

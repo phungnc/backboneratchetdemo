@@ -11,6 +11,7 @@
 
 	utils.loadTemplate('items');
 	utils.loadTemplate('editItem');
+		utils.loadTemplate('about');
 	//Clean View Zombies
 	//Ref: http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/
 	Backbone.View.prototype.close = function(){
