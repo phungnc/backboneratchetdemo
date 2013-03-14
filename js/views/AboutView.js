@@ -8,7 +8,7 @@
 		aboutTemplate: _.template($('#template_about').html()),
 
 		events:{
-			"click .close" 					: "close"
+			"click .cancel" 					: "cancel"
 		},
 
 		initialize: function(options) {
@@ -22,11 +22,21 @@
 			return this;
 		},
 
-		close: function(event) {		
+		cancel: function(event) {
+			event.preventDefault();		
 			this.$el.removeClass('active');
 			//kill this view
 			this.close();
 		},
+		close: function() {	
+			// Keep this.$el for later views.
+			this.$el.empty();
+			this.unbind();
+			// if we want to unbind event from model, then create onClose function.
+			//if (this.onClose){
+			//	this.onClose();
+			//}			
+		}		
 
 	});
 })( App.Views );

@@ -90,12 +90,6 @@
 			top: 1em;
 			z-index: 4;
 		}
-		#popoversInPhone .popover {
-			position: absolute;
-			display: block !important;
-			top: 72px;
-			opacity: 1 !important;
-		}
 	 </style> 
 	
 	</head>
@@ -112,10 +106,10 @@
 					<p class="component-description">The source code is available in <a href="https://github.com/phungnc/backboneratchetdemo/">this repository </a> on GitHub</p>	
 			</article>	
 			<!-- main content -->
-			<div id="popoversInPhone" class="iphone iphone-fixed">
+			<div class="iphone iphone-fixed">
 				<div class="iphone-content">
 					<header class="bar-title">
-						<a id="about" href="#" class="button">Readme</a>
+						<a id="about" role="button" class="button-main">About</a>
 						<h1 class="title">Todolist</h1>
 						<a id="addItem" role="button" class="button-main">Add</a>
 					</header>
@@ -141,7 +135,7 @@
 <!--script src="js/libs/backbone.dragdrop.js"></script-->
 
 <!-- bootstrap -->
-<script src="assets/js/ratchet.js"></script>
+<!--script src="assets/js/ratchet.js"></script-->
 <!--script src="assets/js/fingerblast.js"></script-->
 
 <!-- load resource -->
