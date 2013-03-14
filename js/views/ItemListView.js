@@ -20,6 +20,7 @@
 			//
 			this.item 											= new App.Models.Item();
 			this.addEditItemView 						= new Views.AddEditItemView( { model:this.item } );
+			this.aboutView 									= new Views.AboutView();
 			//this.addEditItemView.parentView = this;
 			//
 			_.bindAll( this, 'deleteItem' );
@@ -101,7 +102,7 @@
 			this.renderAll();			
 		},
 		about: function(){
-			var view = new Views.AboutView();		
+			this.aboutView.render();
 		}
 
 	});
